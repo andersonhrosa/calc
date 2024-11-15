@@ -1,0 +1,24 @@
+def calculadora(num1, num2, operacao):
+  """
+  Realiza uma operação matemática entre dois números.
+  """
+  
+  if operacao == 1:
+    return num1 + num2
+  elif operacao == 2:
+    return num1 - num2
+  elif operacao == 3:
+    return num1 * num2
+  elif operacao == 4:
+    if num2 == 0:
+      print("Divisão por zero não é permitida.")
+      return 0
+    else:
+      return num1 / num2
+  else:
+    print("Operação inválida.")
+    return 0
+
+# Exemplo de uso:
+resultado = calculadora(10, 5, 3)
+print(resultado)  # Imprime 50
